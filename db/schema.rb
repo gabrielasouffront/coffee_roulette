@@ -28,8 +28,9 @@ ActiveRecord::Schema.define(version: 20160612170343) do
   create_table "employees", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "department_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "guest_lists", force: :cascade do |t|

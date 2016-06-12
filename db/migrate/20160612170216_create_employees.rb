@@ -3,6 +3,7 @@ class CreateEmployees < ActiveRecord::Migration
     create_table :employees do |t|
       t.string :name
       t.string :email
+      t.integer :department_id
 
       t.timestamps null: false
     end
