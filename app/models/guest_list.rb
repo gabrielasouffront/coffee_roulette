@@ -1,5 +1,5 @@
 class GuestList < ActiveRecord::Base
-  belongs_to :employees
-  belongs_to :coffee_dates
+  belongs_to :employee
+  belongs_to :coffee_date
   delegate :department, to: :employee
 end
