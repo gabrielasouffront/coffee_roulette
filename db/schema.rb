@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20160612170343) do
   end
 
   create_table "guest_lists", force: :cascade do |t|
-    t.string   "user_id"
+    t.string   "employee_id"
     t.string   "coffee_date_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
