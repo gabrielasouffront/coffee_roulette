@@ -15,3 +15,5 @@ admissions = Department.create(name:"Admissions")
 curriculum = Department.create(name:"Curriculum")
 
 # create some employees
+avidor = Employee.create(name:"Avidor", email:"avi@test.com", department:online_education)
+antoin = Employee.create(name:"Antoin", email:"antoin@test.com", department:in_person_education)
