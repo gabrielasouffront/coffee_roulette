@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+# create departments
+engineering = Department.create(name:"Engineering")
+online_education = Department.create(name:"Online Education")
+in_person_education = Department.create(name:"In Person Education")
+admissions = Department.create(name:"Admissions")
+curriculum = Department.create(name:"Curriculum")
+
+# create some employees
