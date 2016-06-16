@@ -8,6 +8,13 @@
 
 Employee.destroy_all
 Department.destroy_all
+Month.destroy_all
+
+# create the last 12 months
+12.times do | n |
+  start_day = (Date.today - (31 * n).days).beginning_of_month
+  Month.create(start_day: start_day)
+end
 
 # create departments
 5.times do

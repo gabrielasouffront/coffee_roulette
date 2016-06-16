@@ -14,9 +14,8 @@
 ActiveRecord::Schema.define(version: 20160616221225) do
 
   create_table "coffee_dates", force: :cascade do |t|
-    t.datetime "start_month"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "departments", force: :cascade do |t|
@@ -41,9 +40,9 @@ ActiveRecord::Schema.define(version: 20160616221225) do
   end
 
   create_table "months", force: :cascade do |t|
-    t.datetime "start_month"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "start_day"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
