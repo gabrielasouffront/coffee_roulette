@@ -1,4 +1,4 @@
-class PairingServiceObject
+class PairingService
 
   attr_reader :unpaired_employees
 
