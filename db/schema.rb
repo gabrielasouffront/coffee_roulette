@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160612170343) do
+ActiveRecord::Schema.define(version: 20160616221225) do
 
   create_table "coffee_dates", force: :cascade do |t|
     t.datetime "start_month"
@@ -38,6 +38,11 @@ ActiveRecord::Schema.define(version: 20160612170343) do
     t.string   "coffee_date_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+  end
+
+  create_table "months", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
