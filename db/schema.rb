@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20160616221225) do
 
   create_table "coffee_dates", force: :cascade do |t|
+    t.integer  "month_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

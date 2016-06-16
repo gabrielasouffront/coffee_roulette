@@ -24,12 +24,16 @@ end
   rand_dept = Department.all.sample
   FactoryGirl.create(:employee, department: rand_dept)
 end
-# engineering = Department.create(name:"Engineering")
-# online_education = Department.create(name:"Online Education")
-# in_person_education = Department.create(name:"In Person Education")
-# admissions = Department.create(name:"Admissions")
-# curriculum = Department.create(name:"Curriculum")
 
-# create some employees
-# avidor = Employee.create(name:"Avidor", email:"avi@test.com", department:online_education)
-# antoin = Employee.create(name:"Antoin", email:"antoin@test.com", department:in_person_education)
+e1 = Employee.first
+e2 = Employee.second
+e3 = Employee.third
+e4 = Employee.fourth
+
+m1 = Month.first
+m2 = Month.second
+m3 = Month.third
+
+m1.coffee_dates.create(employees: [e1,e2])
+m2.coffee_dates.create(employees: [e1,e3])
+m3.coffee_dates.create(employees: [e1,e4])
