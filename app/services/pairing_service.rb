@@ -27,7 +27,7 @@ class PairingService
   def pairs_are_possible?
     emp1 = @unpaired_employees.first
     the_rest = @unpaired_employees - [emp1]
-    @unpaired_employees < 2 ||
+    @unpaired_employees > 1 &&
     the_rest - emp1.first.previous_coffee_mates != []
   end
 
