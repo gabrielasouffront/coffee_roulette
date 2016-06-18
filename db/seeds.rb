@@ -20,16 +20,15 @@ end
 5.times do
   FactoryGirl.create(:department)
 end
+
+# create 70 employees of various departments
 70.times do
   rand_dept = Department.all.sample
   FactoryGirl.create(:employee, department: rand_dept)
 end
 
-e1 = Employee.first
-e2 = Employee.second
-e3 = Employee.third
-e4 = Employee.fourth
-
-m1 = Month.first
-m2 = Month.second
-m3 = Month.third
+# create coffee dats for employees for past 12 months
+Month.all.each do | month |
+  pairing_service = PairingService.new(month)
+  pairing_service.pair_everyone_up
+end
