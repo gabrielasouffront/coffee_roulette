@@ -33,7 +33,3 @@ e4 = Employee.fourth
 m1 = Month.first
 m2 = Month.second
 m3 = Month.third
-
-m1.coffee_dates.create(employees: [e1,e2])
-m2.coffee_dates.create(employees: [e1,e3])
-m3.coffee_dates.create(employees: [e1,e4])
