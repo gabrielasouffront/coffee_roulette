@@ -27,7 +27,7 @@ Justworks API?
 
 ### Set up mailer
 
-Once employees are all paired up for the month, need to send out an email to everyone stating who their coffee date that month is. Use action mailer perhaps?
+Action Mailer setup for gmail account. Need to setup email view and recipients. 
 
 ### Get site hosted on a server
 
