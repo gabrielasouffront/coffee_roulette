@@ -4,7 +4,7 @@
 
 The intent of this project is to build and app that will automatically pair and email people once a month. This is being set up so that people in the company will be able to set aside some block of time to meet some one new.
 
-The MVP of the project doesn't need any views, just the ability to take in employees (API or manually via command line) and send out emails to them once a month about who they are paired with. 
+The MVP of the project doesn't need any views, just the ability to take in employees (API or manually via command line) and send out emails to them once a month about who they are paired with.
 
 ## Getting the app started
 
@@ -14,10 +14,6 @@ The MVP of the project doesn't need any views, just the ability to take in emplo
  - Optional: `rake db:seed` - uses Faker load up 5 random departments and 70 random employees. Create 12 coffee dates for each employee for the past 12 months. Note: seeding 12 months of coffee dates may take 10 - 20 seconds.
 
 ## To do:
-
-### Modify Employee table and Pairing service to deal with people leaving
-
-Employee's should have a data field as to whether they are currently employed or have left the company. We do not want to pair people with employees that have already left, but we do want to remember their coffee dates. Pairing service should only be pulling from active employees.
 
 ### Figure out how to import actual employee data
 
