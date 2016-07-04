@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160616221225) do
+ActiveRecord::Schema.define(version: 20160704160808) do
 
   create_table "coffee_dates", force: :cascade do |t|
     t.integer  "month_id"
@@ -29,8 +29,9 @@ ActiveRecord::Schema.define(version: 20160616221225) do
     t.string   "name"
     t.string   "email"
     t.integer  "department_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.boolean  "active",        default: true
   end
 
   create_table "guest_lists", force: :cascade do |t|
