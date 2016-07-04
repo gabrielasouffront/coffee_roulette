@@ -1,0 +1,2 @@
+class CoffeeMailer < ApplicationMailer
+end
