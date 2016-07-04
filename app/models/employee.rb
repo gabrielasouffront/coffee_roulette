@@ -4,6 +4,7 @@ class Employee < ActiveRecord::Base
   has_many :employees, through: :guest_lists
   has_many :coffee_dates, through: :guest_lists
   has_many :months, through: :coffee_dates
+  scope :active, -> { where(active: true) }
 
   def previous_coffee_mates
     emps = coffee_dates.collect { | coffee_date | coffee_date.employees }
