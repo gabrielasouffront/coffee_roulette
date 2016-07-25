@@ -1,16 +1,22 @@
-<h1>Hey <%= @employee1.name %> and <%= @employee2.name %>!</h1>
-<p>
-  You two have been paired up for Coffee Roulette this month! Get in touch with eachother and find a half hour chunk of time where the two of you can take a break and get to know eachother a little better.
-</p>
+<!-- <h1>Hey <%#= @employee1.name %> and <%#= @employee2.name %>!</h1> -->
+<!-- <p>
+  You two have been paired up for Coffee Roulette this month! Get in touch with each other and find a half hour chunk of time where the two of you can take a break and get to know each other a little better.
+</p> -->
+
+<% if @employee3 %>
+  <%= render partial: 'trio_message' %>
+<% else %>
+  <%= render partial: 'pair_message' %>
+<% end %>
 <p>
   This can be something like grabbing a coffee togehter, going for a walk outside to see the statue of liberty, doing some arts and crafts, or really anything else you want to. Have fun!
 </p>
 <h3>What is Coffee Roulette?</h3>
 <p>
-  Coffee Roulette is an initiative put together by Culture Club's Operation Butterfly to help The Flatiron School with cross team socialization. As Flatiron grows and people get more and more distant from eachother it can be hard to know who other people in other departments are. The idea here is to take a little time and get to know some one in a different department that you may not have gotten the chance to talk to a whole lot.
+  Coffee Roulette is an initiative put together by Culture Club's Operation Butterfly to help The Flatiron School with cross team socialization. As Flatiron grows and people get more and more distant from each other it can be hard to know who other people in other departments are. The idea here is to take a little time and get to know some one in a different department that you may not have gotten the chance to talk to a whole lot.
 </p>
 <p>
-  If you have any questions comments or if you'd like to help us out in imporiving cross team socialization, join #operation-butterfly on slack!
+  If you have any questions comments or if you'd like to help us out in improving cross team socialization, join #operation-butterfly on slack!
 </p>
 
 <img src="http://i.giphy.com/42YlR8u9gV5Cw.gif" alt="" />

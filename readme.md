@@ -17,19 +17,15 @@ The MVP of the project doesn't need any views, just the ability to take in emplo
  gmail_username: 'your_gmail@gmail.com'
  gmail_password: 'your_gmail_password'
  ```
- 
+
  - `rake db:migrate` - to run all of the migrations
  - Optional: `rake db:seed` - uses Faker load up 5 random departments and 70 random employees. Create 12 coffee dates for each employee for the past 12 months. Note: seeding 12 months of coffee dates may take 10 - 20 seconds.
 
 ## To do:
 
-### Figure out how to import actual employee data
-
-Justworks API?
-
 ### Set up mailer
 
-Action Mailer setup for gmail account. Need to setup email view and recipients.
+Edit email view for text & html format.
 
 ### Get site hosted on a server
 
