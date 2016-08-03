@@ -4,8 +4,7 @@ class Month < ActiveRecord::Base
   has_many :employees, through: :guest_lits
 
 
-  def employee_emails(coffee_date)
-    binding.pry
+  def employee_emails(coffee_date)     
     coffee_date.employees
       .pluck(:email)
         .join(';')

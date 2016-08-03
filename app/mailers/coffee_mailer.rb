@@ -7,7 +7,6 @@ class CoffeeMailer < ApplicationMailer
   # end
   #
   def coffee_pairing(month, coffee_date)
-    binding.pry   
     @employee1, @employee2, @employee3 = *coffee_date.employees
     mail(to: month.employee_emails(coffee_date), subject: 'You two, are going on a date, well sort of.')
   end
