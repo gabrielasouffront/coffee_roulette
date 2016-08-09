@@ -45,7 +45,7 @@ class PairingService
     while pairs_are_possible?
       check_a_pair
     end
-    if @unpaired_employees.count > 1     
+    if @unpaired_employees.count > 1
       @month.coffee_dates.destroy_all
       @unpaired_employees = Employee.active
       pair_everyone_up
