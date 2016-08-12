@@ -21,3 +21,6 @@
 
 #Ignore roster csv
 /lib/fixtures/employee_roster.csv
+
+#Ignore seed data
+/db/seeds.rb

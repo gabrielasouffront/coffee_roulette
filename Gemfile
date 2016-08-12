@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'factory_girl_rails'
 gem 'faker'
 gem "figaro"
+gem 'seed_dump'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
